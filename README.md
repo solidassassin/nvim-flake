@@ -15,7 +15,7 @@ This is my NeoVim configuration fully configured with [NixVim](https://github.co
 # The flake file
 inputs = {
   mynixvim = {
-    url = ""
+    url = "github:solidassassin/nvim-flake"
     # This can be ommited if your system uses the unstable branch as well
     inputs.nixpkgs.follows = "<your_nixpkgs_input_name>"
   }

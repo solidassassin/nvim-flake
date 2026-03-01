@@ -9,8 +9,6 @@ This is my NeoVim configuration fully configured with [NixVim](https://github.co
 
 ## Usage
 
-### As a package with Home Manager
-
 ```nix
 # The flake file
 inputs = {
@@ -21,12 +19,25 @@ inputs = {
   }
 }
 ```
-> [!NOTE]
-> Make sure to import the input(s) if defining this in a seperate file
+
+### As a package with Home Manager
+
+Plug and play experience:
 
 ```nix
 # Home Manager configuration file
 home.packages = [
   inputs.mynixvim.packages.${pkgs.system}.default
+];
+```
+
+### As a module
+
+Useful for when you want to override some options:
+
+```nix
+# Home Manager configuration file
+imports = [
+  inputs.mynixvim.homeModules.default
 ];
 ```

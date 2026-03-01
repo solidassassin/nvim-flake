@@ -17,6 +17,27 @@
         "aarch64-darwin"
       ];
 
+      flake = {
+        homeModules.default =
+          { pkgs, lib, ... }:
+          {
+            imports = [ nixvim.homeModules.nixvim ];
+            programs.nixvim = import ./config { inherit pkgs lib; };
+          };
+        nixosModules.default =
+          { pkgs, lib, ... }:
+          {
+            imports = [ nixvim.nixosModules.nixvim ];
+            programs.nixvim = import ./config { inherit pkgs lib; };
+          };
+        darwinModules.default =
+          { pkgs, lib, ... }:
+          {
+            imports = [ nixvim.darwinModules.nixvim ];
+            programs.nixvim = import ./config { inherit pkgs lib; };
+          };
+      };
+
       perSystem =
         { system, ... }:
         let

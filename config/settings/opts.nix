@@ -14,7 +14,5 @@
     cindent = false;
     autoindent = true;
     inccommand = "split";
-    # foldmethod = "expr";
-    # foldexpr = "v:lua.vim.treesitter.foldexpr()";
   };
 }

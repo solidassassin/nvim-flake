@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.ts-comments.enable = true;
   plugins.treesitter = {
     enable = true;

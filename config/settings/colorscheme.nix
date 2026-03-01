@@ -1,8 +1,8 @@
 {
   highlightOverride = {
-    "@comment.todo" = { 
+    "@comment.todo" = {
       fg = "#f9e2af";
-      bold = true; 
+      bold = true;
     };
   };
 
@@ -12,7 +12,7 @@
       flavour = "mocha";
       term_colors = true;
       transparent_background = false;
-      
+
       color_overrides = {
         mocha = {
           base = "#000000";
@@ -38,7 +38,7 @@
           enabled = true;
           indent_scope_color = "";
         };
-	which_key = true;
+        which_key = true;
       };
     };
   };

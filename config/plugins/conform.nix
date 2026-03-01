@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.conform-nvim = {
     enable = true;
     settings = {
@@ -10,4 +11,3 @@
     nodePackages.prettier
   ];
 }
-

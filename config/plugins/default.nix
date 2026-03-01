@@ -1,0 +1,19 @@
+{
+  imports = [
+    ./barbar.nix
+    ./blink.nix
+    ./conform.nix
+    ./distant.nix
+    ./flash.nix
+    ./gitsigns.nix
+    ./lualine.nix
+    ./lsp.nix
+    ./markview.nix
+    ./noice.nix
+    ./snacks.nix
+    ./sniprun.nix
+    ./treesitter.nix
+    ./trouble.nix
+    ./which-key.nix
+  ];
+}

@@ -1,0 +1,6 @@
+{
+  plugins.distant = {
+    enable = true;
+  };
+}
+

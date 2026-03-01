@@ -9,13 +9,13 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>gb";
+      key = "<leader>b";
       action = "<cmd>Gitsigns blame<CR>";
       options.desc = "Show Git blame";
     }
     {
       mode = "n";
-      key = "<leader>gd";
+      key = "<leader>t";
       action = "<cmd>Gitsigns diffthis<CR>";
       options.desc = "Show Git diff";
     }

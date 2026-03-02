@@ -5,7 +5,7 @@
       gopls.enable = true;
       rust_analyzer.enable = true;
       zls.enable = true;
-      terraformls.enable = true;
+      tofu_ls.enable = true;
       helm_ls.enable = true;
       bashls.enable = true;
       basedpyright.enable = true;

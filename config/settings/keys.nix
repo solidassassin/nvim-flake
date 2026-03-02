@@ -113,5 +113,23 @@
       action = ":%s/";
       options.desc = "Find and replace";
     }
+    {
+      mode = "v";
+      key = ">";
+      action = ">gv";
+      options = {
+        desc = "Indent right";
+        silent = true;
+      };
+    }
+    {
+      mode = "v";
+      key = "<";
+      action = "<gv";
+      options = {
+        desc = "Indent left";
+        silent = true;
+      };
+    }
   ];
 }

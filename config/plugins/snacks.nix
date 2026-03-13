@@ -10,7 +10,14 @@
       input.enabled = true;
       select.enabled = true;
       notifier.enabled = true;
-      picker.enabled = true;
+      picker = {
+        enabled = true;
+        sources = {
+          explorer.hidden = true;
+          files.hidden = true;
+          grep.hidden = true;
+        };
+      };
       dashboard = {
         enabled = true;
         sections = [

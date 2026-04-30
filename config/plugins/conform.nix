@@ -8,6 +8,6 @@
   };
 
   extraPackages = with pkgs; [
-    nodePackages.prettier
+    prettier
   ];
 }

@@ -9,6 +9,7 @@
       helm_ls.enable = true;
       bashls.enable = true;
       basedpyright.enable = true;
+      ruff.enable = true;
       nixd = {
         enable = true;
         config = {

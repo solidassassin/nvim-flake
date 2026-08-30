@@ -108,12 +108,6 @@
       };
     }
     {
-      mode = "n";
-      key = "<leader>r";
-      action = ":%s/";
-      options.desc = "Find and replace";
-    }
-    {
       mode = "v";
       key = ">";
       action = ">gv";

@@ -6,6 +6,7 @@
     ./distant.nix
     ./flash.nix
     ./gitsigns.nix
+    ./grug-far.nix
     ./lualine.nix
     ./lsp.nix
     ./markview.nix

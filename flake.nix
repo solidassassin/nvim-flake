@@ -41,10 +41,19 @@
       perSystem =
         { system, ... }:
         let
+          pkgs = import inputs.nixpkgs {
+            inherit system;
+            config = {
+              # Explicitly allow unfree for barbar.nvim
+              allowUnfreePredicate = pkg: builtins.elem (inputs.nixpkgs.lib.getName pkg) [
+                "barbar.nvim"
+              ];
+            };
+          };
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
-            inherit system; # or alternatively, set `pkgs`
+            inherit pkgs;
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
